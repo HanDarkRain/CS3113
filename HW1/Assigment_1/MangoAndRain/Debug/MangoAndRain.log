@@ -1,0 +1,5 @@
+﻿  main.cpp
+F:\2022+Study\CS3113\HW1\Assigment_1\MangoAndRain\main.cpp(216,26): warning C4244: “-=”: 从“double”转换到“float”，可能丢失数据
+F:\2022+Study\CS3113\HW1\Assigment_1\MangoAndRain\main.cpp(219,26): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+F:\2022+Study\CS3113\HW1\Assigment_1\MangoAndRain\main.cpp(223,26): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+  MangoAndRain.vcxproj -> F:\2022+Study\CS3113\HW1\Assigment_1\MangoAndRain\Debug\MangoAndRain.exe
