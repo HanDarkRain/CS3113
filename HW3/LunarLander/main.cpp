@@ -83,6 +83,9 @@ GameState state;
 
 const int FONTBANK_SIZE = 16;
 
+bool win = false;
+bool lose = false;
+
 GLuint load_texture(const char* filepath)
 {
     // load the image file
@@ -358,16 +361,14 @@ void update()
         // Win if player touch the top surface of the platform
         if (state.player->collided_bottom && state.player->get_last_collision_entity() != NULL) {
             if (state.player->get_last_collision_entity()->type == PLATFORM) {
-                GLuint text_texture_id = load_texture(TEXT_FILEPATH);
-                DrawText(&program, text_texture_id,"SUCCESS", 0.1f,0.5f, glm::vec3(0.5f, 0.0f, 0.0f));
+                win = true;
             }
         }
         // Lose if player touch the sides of the platform
         if ((state.player->collided_left || state.player->collided_right)
             && state.player->get_last_collision_entity() != NULL) {
             if (state.player->get_last_collision_entity()->type == PLATFORM) {
-                GLuint text_texture_id = load_texture(TEXT_FILEPATH);
-                DrawText(&program, text_texture_id, "GAME OVER", 0.1f, 0.5f, glm::vec3(0.5f, 0.0f, 0.0f));
+                lose = true;
             }
 
         }
@@ -378,8 +379,7 @@ void update()
             || state.player->collided_right || state.player->collided_left)
             && state.player->get_last_collision_entity() != NULL) {
             if (state.player->get_last_collision_entity()->type == ITEM) {
-                GLuint text_texture_id = load_texture(TEXT_FILEPATH);
-                DrawText(&program, text_texture_id, "GAME OVER", 0.1f, 0.5f, glm::vec3(0.5f, 0.0f, 0.0f));
+                lose = true;
             }
         }
 
@@ -397,6 +397,17 @@ void render() {
     // render rocks and platforms
     for (int i = 0; i < PLATFORM_COUNT; i++) state.platforms[i].render(&program);
     for (int i = 0; i < ROCK_COUNT; i++) state.rocks[i].render(&program);
+
+    if (win) {
+        GLuint text_texture_id = load_texture(TEXT_FILEPATH);
+        DrawText(&program, text_texture_id, "SUCCESS", 1.0f, 0.1f, glm::vec3(-3.3f, 1.0f, 0.0f));
+    }
+
+    if (lose) {
+        GLuint text_texture_id = load_texture(TEXT_FILEPATH);
+        DrawText(&program, text_texture_id, "GAME OVER", 0.8f, 0.03f, glm::vec3(-3.3f, 1.0f, 0.0f));
+    }
+    
 
     SDL_GL_SwapWindow(display_window);
 }
