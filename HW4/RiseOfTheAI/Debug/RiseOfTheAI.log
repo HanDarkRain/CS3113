@@ -1,0 +1,8 @@
+﻿  main.cpp
+F:\2022+Study\CS3113\HW4\RiseOfTheAI\Entity.h(101,19): warning C4114: 多次使用同一类型限定符
+F:\2022+Study\CS3113\HW4\RiseOfTheAI\Entity.h(114,55): warning C4244: “return”: 从“const float”转换到“const int”，可能丢失数据
+F:\2022+Study\CS3113\HW4\RiseOfTheAI\Entity.h(115,55): warning C4244: “return”: 从“const float”转换到“const int”，可能丢失数据
+F:\2022+Study\CS3113\HW4\RiseOfTheAI\main.cpp(139,23): warning C4018: “<”: 有符号/无符号不匹配
+F:\2022+Study\CS3113\HW4\RiseOfTheAI\main.cpp(320,36): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+F:\2022+Study\CS3113\HW4\RiseOfTheAI\main.cpp(325,35): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+  RiseOfTheAI.vcxproj -> F:\2022+Study\CS3113\HW4\RiseOfTheAI\Debug\RiseOfTheAI.exe
