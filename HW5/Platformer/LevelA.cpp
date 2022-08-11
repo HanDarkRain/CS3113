@@ -96,13 +96,10 @@ void LevelA::update(float delta_time)
 
     state.enemies[0].update(delta_time, state.player, nullptr, 0, this->state.map);
 
-    for (int i = 1; i <= ENEMY_COUNT; i++) {
-        if (state.player->check_collision(&state.enemies[i])) {
-            state.player->set_hp(state.player->get_hp() - 1);
-            state.player->set_position(glm::vec3(5.0f, 0.0f, 0.0f));
-            state.enemies[i].set_position(glm::vec3(10.0f, 0.0f, 0.0f));
-            break;
-        }
+    if (state.player->check_collision(&state.enemies[0])) {
+        state.player->set_hp(state.player->get_hp() - 1);
+        state.player->set_position(glm::vec3(5.0f, 0.0f, 0.0f));
+        state.enemies[0].set_position(glm::vec3(10.0f, 0.0f, 0.0f));
     }
     
 
