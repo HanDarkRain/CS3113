@@ -29,7 +29,7 @@ void Menu::initialise()
 {
     state.next_scene_id = -1;
 
-    GLuint map_texture_id = Utility::load_texture("assets/tileset.png");
+    GLuint map_texture_id = Utility::load_texture("assets/sand_tileset.png");
     this->state.map = new Map(LEVEL_WIDTH, LEVEL_HEIGHT, MENU_DATA, map_texture_id, 1.0f, 4, 1);
 
     // Code from main.cpp's initialise()

@@ -273,8 +273,9 @@ void render()
         Utility::draw_text(&program, text_texture_id, "You Win", 1.0f, 0.1f, glm::vec3(11.5f, -3.5f, 0.0f));
     }
     if (lose) {
+        current_scene->state.player->deactivate();
         GLuint text_texture_id = Utility::load_texture("assets/font1.png");
-        Utility::draw_text(&program, text_texture_id, "You Lose", 0.8f, 0.03f, glm::vec3(5.0f, -3.5f, 0.0f));
+        Utility::draw_text(&program, text_texture_id, "You Lose", 0.8f, 0.03f, glm::vec3(2.3f, -3.5f, 0.0f));
     }
 
     SDL_GL_SwapWindow(display_window);
