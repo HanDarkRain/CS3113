@@ -1,0 +1,8 @@
+﻿  LevelC.cpp
+F:\2022+Study\CS3113\HW5\Platformer\Entity.h(93,56): warning C4244: “return”: 从“const float”转换到“const int”，可能丢失数据
+F:\2022+Study\CS3113\HW5\Platformer\Entity.h(94,56): warning C4244: “return”: 从“const float”转换到“const int”，可能丢失数据
+F:\2022+Study\CS3113\HW5\Platformer\Entity.h(106,44): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+F:\2022+Study\CS3113\HW5\Platformer\LevelC.cpp(87,36): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+F:\2022+Study\CS3113\HW5\Platformer\LevelC.cpp(90,52): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+F:\2022+Study\CS3113\HW5\Platformer\LevelC.cpp(100,53): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+  RiseOfTheAI.vcxproj -> F:\2022+Study\CS3113\HW5\Platformer\Debug\RiseOfTheAI.exe
