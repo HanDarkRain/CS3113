@@ -23,7 +23,10 @@ LevelC::~LevelC()
     delete    this->state.map;
     delete    this->state.reds;
     delete    this->state.gates;
+    delete    this->state.bullets;
     Mix_FreeChunk(this->state.jump_sfx);
+    Mix_FreeChunk(this->state.fire_sfx);
+    Mix_FreeChunk(this->state.gate_sfx);
     Mix_FreeMusic(this->state.bgm);
 }
 
