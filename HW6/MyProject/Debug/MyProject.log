@@ -1,0 +1,9 @@
+﻿  LevelC.cpp
+F:\2022+Study\CS3113\HW6\MyProject\Entity.h(99,56): warning C4244: “return”: 从“const float”转换到“const int”，可能丢失数据
+F:\2022+Study\CS3113\HW6\MyProject\Entity.h(100,56): warning C4244: “return”: 从“const float”转换到“const int”，可能丢失数据
+F:\2022+Study\CS3113\HW6\MyProject\Entity.h(114,44): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+F:\2022+Study\CS3113\HW6\MyProject\LevelC.cpp(148,36): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+F:\2022+Study\CS3113\HW6\MyProject\LevelC.cpp(153,52): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+F:\2022+Study\CS3113\HW6\MyProject\LevelC.cpp(154,52): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+F:\2022+Study\CS3113\HW6\MyProject\LevelC.cpp(155,52): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+  MyProject.vcxproj -> F:\2022+Study\CS3113\HW6\MyProject\Debug\MyProject.exe
